@@ -22,7 +22,7 @@ $(document).ready(function(){
 	}
 	
 	$('#aviso_cookies_cerrar').click(function(){ // al clicar en el icono de cerrar
-		document.cookie = "aviso_cookies=1;path=/;"; // genero la cookie, sin fecha de expiración (se borrará al finalizar la navegación) y sirve para todo el dominio
+		document.cookie = "aviso_cookies=1; path=/; Secure; SameSite=Strict"; // genero la cookie, sin fecha de expiración (se borrará al finalizar la navegación) y sirve para todo el dominio
 		$('#aviso_cookies').css('display', 'none'); // Esconde el aviso de cookies
 	});
 	
